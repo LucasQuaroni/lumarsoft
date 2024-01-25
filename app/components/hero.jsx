@@ -11,7 +11,7 @@ function Hero() {
         </span>
       </div>
       <button className="bg-[#1493f6] px-5 py-3 font-semibold rounded-xl hover:bg-sky-700 transition-all duration-300">
-        Comenzar con LumarSoft
+        Comenzar
       </button>
     </section>
   );
