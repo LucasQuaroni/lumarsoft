@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import { motion } from "framer-motion"
 
 export const metadata = {
   title: "Create Next App",
