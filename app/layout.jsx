@@ -10,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${GeistSans.className} text-white`}>
+      <body
+        className={`${GeistSans.className} text-white bg-black overflow-x-hidden`}
+      >
         <Navbar />
         {children}
       </body>
