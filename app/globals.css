@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(2, 132, 199); /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 5px; /* Radio de los bordes del pulgar */
+}
+
+/* Cambiar el color del fondo de la barra de desplazamiento (opcional) */
+::-webkit-scrollbar-track {
+  background-color: #000000; /* Color del fondo */
+}
