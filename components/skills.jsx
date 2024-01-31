@@ -5,7 +5,7 @@ import Image from "next/image";
 import coding from "../public/coding.png";
 const Skills = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-20 px-20 lgn:px-0">
+    <section className="w-full h-screen flex flex-col items-center justify-center gap-20 px-20 lgn:px-0">
       <div className="flex flex-col text-center font-bold">
         <span className="text-6xl lgn:text-5xl">Potenciando tu empresa</span>
         <span className="text-6xl text-center text-sky-600 lgn:text-5xl">
@@ -18,7 +18,7 @@ const Skills = () => {
           className="flex w-full gap-10 mdn:flex-col mdn:gap-4"
           initial={{ opacity: 0, x: 200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: .5 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image src={coding} width={70} height={90} className="bg-blue-950 p-1 rounded-md mb-3"/> */}
@@ -78,7 +78,7 @@ const Skills = () => {
           className="w-full flex gap-10 px-32 mdn:flex-col xln:px-10 mdn:px-0 mdn:gap-4"
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: .5 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image width={50} height={80} /> */}
