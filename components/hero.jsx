@@ -21,6 +21,8 @@ function Hero() {
       <button className="bg-sky-600 px-5 py-3 font-semibold rounded-xl hover:bg-sky-700 transition-all duration-300">
         Comenzar
       </button>
+
+
     </motion.section>
   );
 }
