@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section className="w-full h-screen flex flex-col items-center justify-center gap-20 px-20 lgn:px-0">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center gap-20 px-20 lgn:px-0 2xln:pt-20">
       <div className="flex flex-col text-center font-bold">
         <span className="text-6xl lgn:text-5xl">Potenciando tu empresa</span>
         <span className="text-6xl text-center text-sky-600 lgn:text-5xl">
@@ -15,9 +15,10 @@ const Skills = () => {
       <div className="flex flex-col gap-10 mdn:gap-4">
         <motion.div
           className="flex w-full gap-10 mdn:flex-col mdn:gap-4"
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true, offset: 0.5 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image src={coding} width={70} height={90} className="bg-blue-950 p-1 rounded-md mb-3"/> */}
@@ -29,11 +30,14 @@ const Skills = () => {
               <p>
                 Nuestro equipo en desarrollo de software está comprometido en
                 brindar soluciones a medida para satisfacer las necesidades
-                únicas de tu negocio. Desde aplicaciones web hasta soluciones
-                empresariales complejas, nos enfocamos en ofrecer software de
-                calidad que impulse el crecimiento y la eficiencia de tu
-                empresa. Nuestro equipo se esfuerza por superar tus expectativas
-                y en enfrentar nuevos desafíos.
+                únicas de tu negocio.
+                <span className="mdn:hidden">
+                  Desde aplicaciones web hasta soluciones empresariales
+                  complejas, nos enfocamos en ofrecer software de calidad que
+                  impulse el crecimiento y la eficiencia de tu empresa. Nuestro
+                  equipo se esfuerza por superar tus expectativas y en enfrentar
+                  nuevos desafíos.
+                </span>
               </p>
             </div>
           </div>
@@ -48,9 +52,12 @@ const Skills = () => {
                 de la información, asesorando a las organizaciones en la
                 identificación y aplicación de soluciones tecnológicas que
                 optimicen sus procesos y mejoren su competitividad en el
-                mercado. Nuestro enfoque estratégico se basa en un análisis
-                exhaustivo del entorno empresarial y en la alineación de la
-                tecnología con los objetivos empresariales a largo plazo.
+                mercado.
+                <span className="mdn:hidden">
+                  Nuestro enfoque estratégico se basa en un análisis exhaustivo
+                  del entorno empresarial y en la alineación de la tecnología
+                  con los objetivos empresariales a largo plazo.
+                </span>
               </p>
             </div>
           </div>
@@ -63,11 +70,13 @@ const Skills = () => {
               <p>
                 Nuestro enfoque es optimizar los procesos empresariales,
                 maximizando la eficiencia y mejorando la productividad mediante
-                la automatización de tareas repetitivas. De forma meticulosa y
-                orientada al detalle garantiza que cada solución se adapte
-                perfectamente a las necesidades específicas de tu empresa,
-                permitiéndote alcanzar tus objetivos con mayor rapidez y
-                precisión.
+                la automatización de tareas repetitivas.
+                <span className="mdn:hidden">
+                  De forma meticulosa y orientada al detalle garantiza que cada
+                  solución se adapte perfectamente a las necesidades específicas
+                  de tu empresa, permitiéndote alcanzar tus objetivos con mayor
+                  rapidez y precisión.
+                </span>
               </p>
             </div>
           </div>
@@ -77,7 +86,8 @@ const Skills = () => {
           className="w-full flex gap-10 px-32 mdn:flex-col xln:px-10 mdn:px-0 mdn:gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true, offset: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image width={50} height={80} /> */}
@@ -88,10 +98,13 @@ const Skills = () => {
               <p>
                 En LumarSoft entendemos que la evolución tecnológica es
                 constante y que las necesidades de tu negocio pueden cambiar con
-                el tiempo. Por ello, ofrecemos un servicio integral de
-                desarrollo y mantenimiento de software diseñado para garantizar
-                que tus aplicaciones estén siempre a la vanguardia y funcionando
-                de manera óptima.
+                el tiempo.
+                <span className="mdn:hidden">
+                  Por ello, ofrecemos un servicio integral de desarrollo y
+                  mantenimiento de software diseñado para garantizar que tus
+                  aplicaciones estén siempre a la vanguardia y funcionando de
+                  manera óptima.
+                </span>
               </p>
             </div>
           </div>
@@ -104,10 +117,12 @@ const Skills = () => {
               <p>
                 Comprendemos que una infraestructura sólida y confiable es
                 fundamental para el éxito de cualquier proyecto tecnológico.
-                Nuestro servicio de Gestión de Infraestructura está diseñado
-                para proporcionarte la base sólida que necesitas para impulsar
-                la innovación y permitiéndote centrarte en lo que realmente
-                importa: Hacer crecer tu negocio.
+                <span className="mdn:hidden">
+                  Nuestro servicio de Gestión de Infraestructura está diseñado
+                  para proporcionarte la base sólida que necesitas para impulsar
+                  la innovación y permitiéndote centrarte en lo que realmente
+                  importa: Hacer crecer tu negocio.
+                </span>
               </p>
             </div>
           </div>
