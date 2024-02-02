@@ -17,7 +17,7 @@ const Skills = () => {
           className="flex w-full gap-10 mdn:flex-col mdn:gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image src={coding} width={70} height={90} className="bg-blue-950 p-1 rounded-md mb-3"/> */}
@@ -77,7 +77,7 @@ const Skills = () => {
           className="w-full flex gap-10 px-32 mdn:flex-col xln:px-10 mdn:px-0 mdn:gap-4"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image width={50} height={80} /> */}
