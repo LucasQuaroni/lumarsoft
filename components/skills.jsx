@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
-import coding from "../public/coding.png";
+
 const Skills = () => {
   return (
     <section className="w-full h-screen flex flex-col items-center justify-center gap-20 px-20 lgn:px-0">
@@ -16,9 +15,9 @@ const Skills = () => {
       <div className="flex flex-col gap-10 mdn:gap-4">
         <motion.div
           className="flex w-full gap-10 mdn:flex-col mdn:gap-4"
-          initial={{ opacity: 0, x: 200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image src={coding} width={70} height={90} className="bg-blue-950 p-1 rounded-md mb-3"/> */}
@@ -76,9 +75,9 @@ const Skills = () => {
 
         <motion.div
           className="w-full flex gap-10 px-32 mdn:flex-col xln:px-10 mdn:px-0 mdn:gap-4"
-          initial={{ opacity: 0, x: -200 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: .5 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
             {/* <Image width={50} height={80} /> */}
@@ -107,7 +106,8 @@ const Skills = () => {
                 fundamental para el éxito de cualquier proyecto tecnológico.
                 Nuestro servicio de Gestión de Infraestructura está diseñado
                 para proporcionarte la base sólida que necesitas para impulsar
-                la innovación y permitiéndote centrarte en lo que realmente importa: Hacer crecer tu negocio.
+                la innovación y permitiéndote centrarte en lo que realmente
+                importa: Hacer crecer tu negocio.
               </p>
             </div>
           </div>
