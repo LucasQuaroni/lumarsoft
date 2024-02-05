@@ -10,8 +10,8 @@ const Technologies = () => {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3, //tiempo de espera antes de que comiencen a animarse los hijos
-        staggerChildren: 0.2, //tiempo de espera entre cada hijo
+        delayChildren: 0.3, 
+        staggerChildren: 0.2, 
         viewport: { once: true, offset: 0.4 },
       },
     },
