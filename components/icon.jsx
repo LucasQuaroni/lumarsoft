@@ -12,7 +12,7 @@ export default function Icon({ name, image,url }) {
       href={url}
       target="_blank"
     >
-      <Image src={image} width={70} height={70} />
+      <Image src={image} width={70} height={70} className="smn:w-12 smn:h-12"/>
       <Tooltip id="my-tooltip" />
     </a>
   );

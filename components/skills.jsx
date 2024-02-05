@@ -5,24 +5,35 @@ import { motion } from "framer-motion";
 const Skills = () => {
   return (
     <section className="w-full min-h-screen flex flex-col items-center justify-center gap-20 px-20 lgn:px-0 2xln:pt-20">
-      <div className="flex flex-col text-center font-bold">
-        <span className="text-6xl lgn:text-5xl">Potenciando tu empresa</span>
-        <span className="text-6xl text-center text-sky-600 lgn:text-5xl">
-          hacia el exito digital
-        </span>
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, offset: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <div className="flex flex-col text-center font-bold">
+          <span className="text-6xl lgn:text-5xl">Potenciando tu empresa</span>
+          <span className="text-6xl text-center text-sky-600 lgn:text-5xl">
+            hacia el exito digital
+          </span>
+        </div>
+      </motion.div>
 
       <div className="flex flex-col gap-10 mdn:gap-4">
         <motion.div
           className="flex w-full gap-10 mdn:flex-col mdn:gap-4"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, offset: 0.5 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
+          viewport={{ once: true, offset: 0.3 }}
         >
-          <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
-            {/* <Image src={coding} width={70} height={90} className="bg-blue-950 p-1 rounded-md mb-3"/> */}
-            {/* No me convence el poner iconos, realmente queda mejor sin. Creo que lo dejaria sin icono. */}
+          <motion.div
+            className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true, offset: 0.3 }}
+          >
             <div className="flex flex-col gap-4 w-full">
               <span className="text-sky-300 bg-blue-950 px-4 py-1 rounded-lg text-center font-semibold text-lg">
                 Software personalizado
@@ -40,9 +51,15 @@ const Skills = () => {
                 </span>
               </p>
             </div>
-          </div>
-          <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
-            {/* <Image width={50} height={80} /> */}
+          </motion.div>
+
+          <motion.div
+            className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true, offset: 0.3 }}
+          >
             <div className="flex flex-col gap-4 w-full">
               <span className="text-sky-300 bg-blue-950 px-4 py-1 rounded-lg text-center font-semibold text-lg">
                 Gestión de la información
@@ -60,9 +77,15 @@ const Skills = () => {
                 </span>
               </p>
             </div>
-          </div>
-          <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
-            {/* <Image width={50} height={80} /> */}
+          </motion.div>
+
+          <motion.div
+            className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true, offset: 0.3 }}
+          >
             <div className="flex flex-col gap-4 w-full">
               <span className="text-sky-300 bg-blue-950 px-4 py-1 rounded-lg text-center text-lg font-semibold">
                 Optimización y Automatización:
@@ -79,18 +102,15 @@ const Skills = () => {
                 </span>
               </p>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
 
-        <motion.div
-          className="w-full flex gap-10 px-32 mdn:flex-col xln:px-10 mdn:px-0 mdn:gap-4"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, offset: 0.5 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-        >
-          <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
-            {/* <Image width={50} height={80} /> */}
+          <motion.div
+            className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true, offset: 0.3 }}
+          >
             <div className="flex flex-col gap-4 w-full">
               <span className="text-sky-300 bg-blue-950 px-4 py-1 rounded-lg text-center text-lg font-semibold">
                 Desarrollo y mantenimiento
@@ -107,9 +127,15 @@ const Skills = () => {
                 </span>
               </p>
             </div>
-          </div>
-          <div className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4">
-            {/* <Image width={50} height={80} /> */}
+          </motion.div>
+
+          <motion.div
+            className="w-full h-full rounded-lg border border-zinc-800 px-4 py-4"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+            viewport={{ once: true, offset: 0.3 }}
+          >
             <div className="flex flex-col gap-4 w-full">
               <span className="text-sky-300 bg-blue-950 px-4 py-1 rounded-lg text-center text-lg font-semibold">
                 Gestión de infraestructura
@@ -125,7 +151,7 @@ const Skills = () => {
                 </span>
               </p>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>

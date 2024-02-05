@@ -11,20 +11,27 @@ function Hero() {
         transition={{ type: "spring", stiffness: 100, damping: 20 }}
       >
         <div className="flex flex-col -translate-y-20 mdn:-translate-y-0">
-          <div className="tracking-tighter text-9xl 2xln:text-9xl lgn:text-8xl mdn:text-7xl smn:text-5xl font-semibold">
+          <div className="tracking-tighter text-9xl 2xln:text-9xl lgn:text-8xl mdn:text-7xl smn:text-6xl font-semibold">
             <h1>Actúa ahora.</h1>
             <h2 className="text-sky-600 font-bold">Crea el futuro.</h2>
           </div>
-          <span className="text-2xl text-zinc-500 text-center mdn:text-xl">
+          <span className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg">
             Innovación que inspira, soluciones que impactan
           </span>
         </div>
-        <button className="bg-sky-600 px-5 py-3 font-semibold rounded-xl hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0">
+        <button className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0">
           Comenzar
         </button>
       </motion.section>
 
-      <hr className=" w-full h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-700 to-transparent opacity-25 dark:opacity-100" />
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, offset: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <hr className=" w-full h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-700 to-transparent opacity-25 dark:opacity-100" />
+      </motion.div>
     </div>
   );
 }
