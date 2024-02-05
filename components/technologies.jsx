@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Technologies = () => {
   const container = {
     hidden: { opacity: 0 },
-    show: {
+    whileInView: {
       opacity: 1,
       transition: {
         delayChildren: 0.3, 
