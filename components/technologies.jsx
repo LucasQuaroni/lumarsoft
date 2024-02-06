@@ -46,7 +46,7 @@ const Technologies = () => {
         className="grid grid-cols-6 gap-4 lgn:grid-cols-5 mdn:grid-cols-4 smn:grid-cols-6 mt-6"
         variants={container}
         initial="hidden"
-        animate="show"
+        whileInView="show"
       >
         {stackTechnologies.map((tech) => (
           <motion.li
