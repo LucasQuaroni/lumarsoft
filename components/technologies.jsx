@@ -4,14 +4,16 @@ import { stackTechnologies } from "@/lib/techStack";
 import React from "react";
 import Icon from "./icon";
 import { motion } from "framer-motion";
+
+
 const Technologies = () => {
   const container = {
     hidden: { opacity: 0 },
-    whileInView: {
+    show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3, 
-        staggerChildren: 0.2, 
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
         viewport: { once: true, offset: 0.4 },
       },
     },
@@ -51,6 +53,7 @@ const Technologies = () => {
             className="list-none"
             initial={{ opacity: 0, y: 30 }}
             variants={itemAnimado}
+            key={tech.id}
           >
             <Icon
               name={tech.name}
