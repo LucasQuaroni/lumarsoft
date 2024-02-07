@@ -14,12 +14,14 @@ function Navbar() {
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
     >
       <div className="flex items-center gap-5">
-        <Image src={logo} width={60} height={60} alt="asd" />
+        <a href="">
+          <Image src={logo} width={60} height={60} alt="asd" />
+        </a>
         <div className="flex gap-5 mdn:hidden">
-          <span>Servicios</span>
-          <span>Tecnologias</span>
-          <span>Nosotros</span>
-          <span>Contáctanos</span>
+          <a href="#services">Servicios</a>
+          <a href="#technologies">Tecnologias</a>
+          <a href="">Nosotros</a>
+          <a href="">Contáctanos</a>
         </div>
       </div>
 

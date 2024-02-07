@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center gap-20 2xln:pt-20">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center gap-20 2xln:pt-20" id="services">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
