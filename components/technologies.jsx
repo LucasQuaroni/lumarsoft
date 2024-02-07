@@ -5,7 +5,6 @@ import React from "react";
 import Icon from "./icon";
 import { motion } from "framer-motion";
 
-
 const Technologies = () => {
   const container = {
     hidden: { opacity: 0 },
@@ -29,24 +28,36 @@ const Technologies = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.8 },
+      transition: { duration: 0.5 },
     },
   };
 
   return (
-    <section className="w-full pb-40 flex items-center flex-col ">
-      <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl">
-        Tecnologias
-      </h3>
-      <p className="text-center text-xl mt-4 lgn:text-base">
-        Estas son algunas de las tecnologias que utilizamos para desarrollar tus
-        proyectos.
-      </p>
+    <section
+      className="w-full pb-40 flex items-center flex-col"
+      id="technologies"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, offset: 0.5 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+      >
+        <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl">
+          Tecnologias
+        </h3>
+        <p className="text-center text-xl mt-4 lgn:text-base">
+          Estas son algunas de las tecnologias que utilizamos para desarrollar
+          tus proyectos.
+        </p>
+      </motion.div>
+
       <motion.ul
-        className="grid grid-cols-6 gap-4 lgn:grid-cols-5 mdn:grid-cols-4 smn:grid-cols-6 mt-6"
+        className="grid grid-cols-6 gap-4 lgn:grid-cols-5 mdn:grid-cols-4 smn:grid-cols-4 mt-6"
         variants={container}
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, offset: 0.4 }}
       >
         {stackTechnologies.map((tech) => (
           <motion.li
