@@ -11,8 +11,8 @@ const Technologies = () => {
     show: {
       opacity: 1,
       transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2,
+        delayChildren: 0.1,
+        staggerChildren: 0.1,
         viewport: { once: true, offset: 0.4 },
       },
     },
@@ -65,6 +65,7 @@ const Technologies = () => {
             initial={{ opacity: 0, y: 30 }}
             variants={itemAnimado}
             key={tech.id}
+            
           >
             <Icon
               name={tech.name}
