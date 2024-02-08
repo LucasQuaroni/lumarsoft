@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Tooltip } from "react-tooltip";
 
-export default function Icon({ name, image,url }) {
+export default function Icon({ name, image, url }) {
   return (
     <a
       data-tooltip-id="my-tooltip"
@@ -12,7 +12,13 @@ export default function Icon({ name, image,url }) {
       href={url}
       target="_blank"
     >
-      <Image src={image} width={70} height={70} className="smn:w-12 smn:h-12"/>
+      <Image
+        src={image}
+        width={70}
+        height={70}
+        className="smn:w-12 smn:h-12"
+        alt={name}
+      />
       <Tooltip id="my-tooltip" />
     </a>
   );
