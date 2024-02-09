@@ -1,0 +1,19 @@
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.aTech>a:after {
+  display: block;
+  content: "";
+  width: inherit;
+  border-bottom: solid 3px #0284c7;
+  border-radius: 20px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.aTech>a:hover:after {
+  transform: scaleX(1);
+}

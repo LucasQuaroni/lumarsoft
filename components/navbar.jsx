@@ -4,7 +4,7 @@ import logo from "../public/Lumar.png";
 import linkedin from "../public/linkedin.png";
 import github from "../public/github.png";
 import { motion } from "framer-motion";
-
+import "./navbar.css";
 function Navbar() {
   return (
     <motion.nav
@@ -17,9 +17,10 @@ function Navbar() {
         <a href="">
           <Image src={logo} width={60} height={60} alt="asd" />
         </a>
-        <div className="flex gap-5 mdn:hidden">
+        <div className="flex gap-5 mdn:hidden aTech">
           <a href="#services">Servicios</a>
           <a href="#technologies">Tecnologias</a>
+          <a href="#whyUs">¿Por qué elegirnos? </a>
           <a href="">Nosotros</a>
           <a href="">Contáctanos</a>
         </div>

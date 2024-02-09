@@ -12,9 +12,9 @@ export default function Home() {
 
         <SecondSkills />
 
-        <Technologies />
-
         <WhyChoose />
+
+        <Technologies />
       </div>
     </main>
   );
