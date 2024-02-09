@@ -2,7 +2,7 @@ import Hero from "../components/hero";
 import Blur from "@/components/blur";
 import Technologies from "@/components/technologies";
 import SecondSkills from "@/components/secondSkills";
-import WhyChoose from "@/components/whyChoose";
+import WhyChoose from "@/components/WhyUs";
 export default function Home() {
   return (
     <main className="text-white ">
