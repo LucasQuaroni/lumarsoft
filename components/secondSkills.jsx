@@ -25,7 +25,7 @@ const SecondSkills = () => {
         </div>
       </motion.div>
 
-      <div className="w-full flex gap-10">
+      <div className="w-full flex gap-10 smn:flex flex-col">
         {skillArr.map((skill) => (
           <CardService contenido={skill} key={skill.id} />
         ))}
