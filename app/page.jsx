@@ -3,6 +3,7 @@ import Blur from "@/components/blur";
 import Technologies from "@/components/technologies";
 import SecondSkills from "@/components/secondSkills";
 import WhyChoose from "@/components/WhyUs";
+import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main className="text-white ">
@@ -15,6 +16,8 @@ export default function Home() {
         <WhyChoose />
 
         <Technologies />
+
+        <Contact />
       </div>
     </main>
   );
