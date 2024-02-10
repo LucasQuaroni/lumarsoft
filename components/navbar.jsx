@@ -8,10 +8,15 @@ import "./navbar.css";
 function Navbar() {
   return (
     <motion.nav
-      className="w-full flex absolute px-16 py-2 items-center gap-4 font-semibold justify-between lgn:px-10 smn:px-4"
-      initial={{ y: -250 }}
-      animate={{ y: -5 }}
-      transition={{ type: "spring", stiffness: 100, damping: 20 }}
+      className="w-full flex absolute px-16 py-2 items-center gap-4 font-semibold justify-between lgn:px-10 smn:px-4 z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 20,
+        delay: 0.1,
+      }}
     >
       <div className="flex items-center gap-5">
         <a href="">
@@ -19,10 +24,10 @@ function Navbar() {
         </a>
         <div className="flex gap-5 mdn:hidden aTech">
           <a href="#services">Servicios</a>
-          <a href="#technologies">Tecnologias</a>
           <a href="#whyUs">¿Por qué elegirnos? </a>
+          <a href="#technologies">Tecnologias</a>
           <a href="">Nosotros</a>
-          <a href="">Contáctanos</a>
+          <a href="#contact">Contáctanos</a>
         </div>
       </div>
 

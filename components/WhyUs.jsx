@@ -8,7 +8,6 @@ import { FaHandshakeSimple } from "react-icons/fa6";
 import { FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { FaHandHoldingHeart } from "react-icons/fa";
-
 const WhyUs = () => {
   return (
     <div className="max-w-5xl mx-auto mb-10 mt-40 text-center " id="whyUs">
