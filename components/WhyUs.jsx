@@ -7,10 +7,10 @@ import { FcProcess } from "react-icons/fc";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { FaChartLine } from "react-icons/fa";
 import { motion } from "framer-motion";
-
+import { FaHandHoldingHeart } from "react-icons/fa";
 const WhyUs = () => {
   return (
-    <div className="max-w-5xl mx-auto mb-24 text-center">
+    <div className="max-w-5xl mx-auto mb-10 mt-40 text-center " id="whyUs">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -121,9 +121,11 @@ const WhyUs = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <ReasonCard
-            icon={<SlEnergy className="text-3xl text-pink-500 mb-2 mx-auto" />}
+            icon={
+              <FaHandHoldingHeart className="text-3xl text-pink-500 mb-2 mx-auto" />
+            }
             title="Transparencia y Honestidad"
-            description="Creemos en la transparencia y la honestidad en todas nuestras relaciones comerciales. Te mantendremos informado en cada paso del proceso de desarrollo."
+            description="Creemos en la transparencia y la honestidad en nuestras relaciones comerciales. Te mantendremos informado en cada paso del desarrollo."
           />
         </motion.div>
       </motion.div>
