@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className="h-screen w-full flex justify-center items-center">
       <section className="text-white body-font" id="contact">
         <div className="py-14">
           <motion.div
@@ -29,10 +29,10 @@ const Contact = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <div className="flex flex-col text-center mb-12">
-              <span className="text-5xl font-semibold mb-4 text-sky-500">
+              <span className="text-7xl font-semibold mb-4 text-sky-500">
                 Contáctanos
               </span>
-              <p className="text-base text-[#a5a5a5]">
+              <p className="text-lg text-[#a5a5a5]">
                 Tu oportunidad para un cambio radical <b>comienza aquí</b>.{" "}
                 <br /> Envíanos un mensaje y déjanos llevarte al{" "}
                 <b>siguiente nivel.</b>
