@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import logo from "../public/Lumar.png";
-import linkedin from "../public/linkedin.png";
-import github from "../public/github.png";
+import logo from "../public/Icons/Lumar.png";
+import linkedin from "../public/Icons/linkedin.png";
+import github from "../public/Icons/github.png";
 import { motion } from "framer-motion";
 import "./navbar.css";
 function Navbar() {
@@ -25,8 +25,8 @@ function Navbar() {
         <div className="flex gap-5 mdn:hidden aTech">
           <a href="#services">Servicios</a>
           <a href="#whyUs">¿Por qué elegirnos? </a>
+          <a href="nosotros">Nosotros</a>
           <a href="#technologies">Tecnologias</a>
-          <a href="">Nosotros</a>
           <a href="#contact">Contáctanos</a>
         </div>
       </div>

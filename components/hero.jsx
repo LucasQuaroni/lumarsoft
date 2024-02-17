@@ -1,7 +1,13 @@
 "use client";
 import { motion } from "framer-motion";
+// import { useRouter } from "next/router";
+// import en from "../public/locale/en";
+// import es from "../public/locale/es";
 
 function Hero() {
+  // const router = useRouter();
+  // const { locale } = router;
+  // const t = locale === "en" ? en : es;
   return (
     <div className="min-h-screen w-full flex flex-col h-screen">
       <motion.section
@@ -16,7 +22,7 @@ function Hero() {
             <h2 className="text-sky-600 font-bold">Crea el futuro.</h2>
           </div>
           <span className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg">
-            Innovación que inspira, soluciones que impactan
+            Innovación que inspira, soluciones que impactan.
           </span>
         </div>
         <button className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0">

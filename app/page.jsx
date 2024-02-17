@@ -4,6 +4,9 @@ import Technologies from "@/components/technologies";
 import SecondSkills from "@/components/secondSkills";
 import WhyChoose from "@/components/WhyUs";
 import Contact from "@/components/Contact";
+import Nosotros from "@/components/Nosotros";
+import whatsApp from "../public/Icons/WhatsApp_icon.png";
+import Image from "next/image";
 export default function Home() {
   return (
     <main className="text-white ">
@@ -15,9 +18,15 @@ export default function Home() {
 
         <WhyChoose />
 
+        <Nosotros />
+
         <Technologies />
 
         <Contact />
+
+        <div className="flex justify-center items-center gap-4 mb-2">
+          <p>LumarSoft - Todos los derechos reservados - 2024</p>
+        </div>
       </div>
     </main>
   );

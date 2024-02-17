@@ -1,7 +1,8 @@
 import Navbar from "../components/navbar";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
-import { motion } from "framer-motion"
+import Image from "next/image";
+import whatsApp from "../public/Icons/WhatsApp_icon.png";
 
 export const metadata = {
   title: "Lumar Soft",
@@ -13,9 +14,23 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className={`${GeistSans.className} text-white bg-black overflow-x-hidden`}
+        style={{ position: "relative" }}
       >
         <Navbar />
         {children}
+        <a
+          href="https://wa.me/543412776893"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-10 right-10 z-50"
+        >
+          <Image
+            src={whatsApp}
+            alt="WhatsApp Logo"
+            width={70}
+            height={70}
+          />
+        </a>
       </body>
     </html>
   );
