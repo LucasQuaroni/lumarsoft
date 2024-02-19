@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
-const Contact = ({lenguaje}) => {
+const Contact = ({ lenguaje }) => {
   const refForm = useRef();
 
   const handleSubmit = (e) => {
@@ -30,11 +30,9 @@ const Contact = ({lenguaje}) => {
           >
             <div className="flex flex-col text-center mb-12">
               <span className="text-5xl font-semibold mb-4 text-sky-500">
-               {lenguaje.title}
+                {lenguaje.title}
               </span>
-              <p className="text-base text-[#a5a5a5]">
-               {lenguaje.subtitle}
-              </p>
+              <p className="text-base text-[#a5a5a5]">{lenguaje.subtitle}</p>
             </div>
           </motion.div>
 
@@ -75,7 +73,7 @@ const Contact = ({lenguaje}) => {
                 >
                   <div>
                     <label htmlFor="email" className="text-sm text-white">
-                    {lenguaje.form.labelEmail}
+                      {lenguaje.form.labelEmail}
                     </label>
                     <input
                       type="email"

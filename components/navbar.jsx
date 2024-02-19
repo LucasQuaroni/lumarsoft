@@ -43,7 +43,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 items-center">
         {params.lang === "en" ? (
           <a href="/es" className="font-semibold">
             ES

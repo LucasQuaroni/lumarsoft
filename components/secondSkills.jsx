@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { skillArr } from "@/lib/skill";
 import CardService from "./cardService";
 
 const SecondSkills = ({ lenguaje }) => {
