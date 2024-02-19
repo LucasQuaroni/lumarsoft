@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
-function Hero() {
+function Hero({ lenguaje }) {
   return (
     <div className="min-h-screen w-full flex flex-col h-screen">
       <motion.section
@@ -12,15 +11,15 @@ function Hero() {
       >
         <div className="flex flex-col -translate-y-20 mdn:-translate-y-0">
           <div className="tracking-tighter text-9xl 2xln:text-9xl lgn:text-8xl mdn:text-7xl smn:text-5xl font-semibold">
-            <h1>Actúa ahora.</h1>
-            <h2 className="text-sky-600 font-bold">Crea el futuro.</h2>
+            <h1>{lenguaje.title1}</h1>
+            <h2 className="text-sky-600 font-bold">{lenguaje.title2}</h2>
           </div>
           <span className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg">
-            Innovación que inspira, soluciones que impactan
+            {lenguaje.subtitle}
           </span>
         </div>
         <button className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0">
-          Comenzar
+          {lenguaje.button}
         </button>
       </motion.section>
 

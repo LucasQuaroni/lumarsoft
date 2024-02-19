@@ -5,7 +5,7 @@ import React from "react";
 import Icon from "./icon";
 import { motion } from "framer-motion";
 
-const Technologies = () => {
+const Technologies = ({lenguaje}) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -44,11 +44,10 @@ const Technologies = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl">
-          Tecnologias
+         {lenguaje.title}
         </h3>
         <p className="text-center text-xl mt-4 lgn:text-base">
-          Estas son algunas de las tecnologias que utilizamos para desarrollar
-          tus proyectos.
+        {lenguaje.description}
         </p>
       </motion.div>
 

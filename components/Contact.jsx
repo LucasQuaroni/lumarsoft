@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+const Contact = ({ lenguaje }) => {
   const refForm = useRef();
 
   const handleSubmit = (e) => {
@@ -29,13 +29,11 @@ const Contact = () => {
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <div className="flex flex-col text-center mb-12">
-              <span className="text-7xl font-semibold mb-4 text-sky-500">
-                Contáctanos
+              <span className="text-5xl font-semibold mb-4 text-sky-500">
+              {lenguaje.title}
               </span>
-              <p className="text-lg text-[#a5a5a5]">
-                Tu oportunidad para un cambio radical <b>comienza aquí</b>.{" "}
-                <br /> Envíanos un mensaje y déjanos llevarte al{" "}
-                <b>siguiente nivel.</b>
+              <p className="text-base text-[#a5a5a5]">
+              {lenguaje.subtitle}
               </p>
             </div>
           </motion.div>
@@ -55,14 +53,14 @@ const Contact = () => {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                   >
                     <label htmlFor="name" className="text-sm text-white">
-                      Nombre
+                      {lenguaje.form.labelName}
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
                       className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
-                      placeholder="Tu nombre aquí"
+                      placeholder={lenguaje.form.placeholderName}
                       required
                     />
                   </motion.div>
@@ -77,14 +75,14 @@ const Contact = () => {
                 >
                   <div>
                     <label htmlFor="email" className="text-sm text-white">
-                      Email
+                      {lenguaje.form.labelEmail}
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
                       className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
-                      placeholder="Tu email aquí"
+                      placeholder={lenguaje.form.placeholderEmail}
                       required
                     />
                   </div>
@@ -99,13 +97,13 @@ const Contact = () => {
                 >
                   <div>
                     <label htmlFor="message" className="text-sm text-white">
-                      Message
+                      {lenguaje.form.labelMessage}
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       className="resize-none w-full bg-black rounded border border-zinc-700 h-32 text-base outline-none text-white px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
-                      placeholder="Cuéntanos un poco sobre tus objetivos y qué esperas lograr con LumarSoft."
+                      placeholder={lenguaje.form.placeholderMessage}
                       required
                     ></textarea>
                   </div>
@@ -119,7 +117,7 @@ const Contact = () => {
                 transition={{ duration: 0.7, ease: "easeOut" }}
               >
                 <button className="flex mx-auto text-white font-medium bg-sky-500 border-0 py-2 px-20 focus:outline-none hover:bg-sky-600 ease-in-out duration-200 rounded text-lg">
-                  Button
+                  {lenguaje.form.button}
                 </button>
               </motion.div>
             </div>
