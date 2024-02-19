@@ -19,7 +19,7 @@ const Contact = ({ lenguaje }) => {
   };
 
   return (
-    <div>
+    <div className="h-screen w-full flex justify-center items-center">
       <section className="text-white body-font" id="contact">
         <div className="py-14">
           <motion.div
@@ -30,9 +30,11 @@ const Contact = ({ lenguaje }) => {
           >
             <div className="flex flex-col text-center mb-12">
               <span className="text-5xl font-semibold mb-4 text-sky-500">
-                {lenguaje.title}
+              {lenguaje.title}
               </span>
-              <p className="text-base text-[#a5a5a5]">{lenguaje.subtitle}</p>
+              <p className="text-base text-[#a5a5a5]">
+              {lenguaje.subtitle}
+              </p>
             </div>
           </motion.div>
 
