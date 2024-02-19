@@ -39,7 +39,7 @@ function Navbar() {
           <a href="#technologies">
             {params.lang === "es" ? "Tecnologias" : "Technologies"}
           </a>
-          <a href="#contact">{params.Lang === "en" ? "Contacto" : "Contact"}</a>
+          <a href="#contact">{params.lang === "es" ? "Contacto" : "Contact"}</a>
         </div>
       </div>
 
