@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { skillArr } from "@/lib/skill";
 import CardService from "./cardService";
 
-
-const SecondSkills = () => {
+const SecondSkills = ({ lenguaje }) => {
   return (
     <section
       className="w-full min-h-screen h-full flex flex-col items-center justify-center gap-20 2xln:pt-20 pt-10"
@@ -18,16 +17,16 @@ const SecondSkills = () => {
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         <div className="flex flex-col text-center font-bold">
-          <span className="text-6xl lgn:text-5xl">Potenciando tu empresa</span>
+          <span className="text-6xl lgn:text-5xl">{lenguaje.title1}</span>
           <span className="text-6xl text-center text-sky-600 lgn:text-5xl">
-            hacia el exito digital
+            {lenguaje.title2}
           </span>
         </div>
       </motion.div>
 
       <div className="w-full flex gap-10 lgn:flex lgn:flex-col">
-        {skillArr.map((skill) => (
-          <CardService contenido={skill} key={skill.id} />
+        {lenguaje.cardService.map((skill) => (
+          <CardService lenguaje={skill} key={skill.id} />
         ))}
       </div>
     </section>

@@ -10,10 +10,16 @@ const nextConfig = {
       },
     ],
   },
-  // i18n: {
-  //   locales: ["es", "en"],
-  //   defaultLocale: "en",
-  // },
+  redirects: async () => {
+    return [
+      {
+        source: "/",
+        destination: "/es",
+        permanent: false,
+      },
+    ];
+  },
+  
 };
 
 export default nextConfig;

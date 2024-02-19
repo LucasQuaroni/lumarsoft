@@ -1,0 +1,119 @@
+{
+  "Hero": {
+    "title1": "Act now.",
+    "title2": "Create the future.",
+    "subtitle": "Innovation that inspires, solutions that impact.",
+    "button": "Start"
+  },
+  "SecondSkill": {
+    "title1": "Empowering your company",
+    "title2": "towards digital success",
+    "cardService": [
+      {
+        "id": 1,
+        "title": "Custom Software Development",
+        "description": "We offer specialized services in web and desktop application development, using modern and cutting-edge technologies to meet the specific needs of our clients.",
+        "step1": "Design of the application architecture.",
+        "descriptionStep1": "In this step, a detailed analysis of the client's requirements is carried out and the architecture of the application is designed.",
+        "step2": "Application development.",
+        "descriptionStep2": "During this stage, the application logic is implemented following the design established in the previous phase. The necessary code is written to develop the required functions.",
+        "step3": "Application testing.",
+        "descriptionStep3": "In this phase, thorough tests are carried out to validate the correct operation of the application and ensure that it meets the requirements specified by the client.",
+        "step4": "Application deployment.",
+        "descriptionStep4": "Once the application has passed all tests and is ready for launch, it is deployed in a production environment."
+      },
+      {
+        "id": 2,
+        "title": "Web Pages Development and Online Stores Management",
+        "description": "Design and development of web pages, along with management, maintenance, and support of online stores and sales channels, using modern and cutting-edge technologies.",
+        "step1": "Design of the web and online store architecture.",
+        "descriptionStep1": "The structure and layout of elements on the web page and the Ecommerce are defined, as well as navigation between different sections.",
+        "step2": "Development of the web page and the Ecommerce.",
+        "descriptionStep2": "During this step, web pages or the Ecommerce are built, ensuring they are visually appealing and functional.",
+        "step3": "Testing of the web page and the online store.",
+        "descriptionStep3": "Tests are carried out to ensure that the web page and the Ecommerce are displayed correctly on different devices and browsers and function properly.",
+        "step4": "Deployment of the web page and the Ecommerce.",
+        "descriptionStep4": "The web page and the Ecommerce are uploaded to a server to be available on the Internet, ensuring that users can access them at any time."
+      },
+      {
+        "id": 3,
+        "title": "Integration and Systems Migration Services",
+        "description": "We help companies integrate and migrate their existing systems to new platforms or technologies, optimizing their processes and maximizing the value of their investments in information technology.",
+        "step1": "Assessment of current technological infrastructure.",
+        "descriptionStep1": "Detailed analysis to identify areas for improvement and opportunities for integration and migration.",
+        "step2": "Design and implementation of migration strategies.",
+        "descriptionStep2": "Planning and execution of data transfer and configuration of new systems.",
+        "step3": "Integration of enterprise systems.",
+        "descriptionStep3": "We ensure interoperability and effective communication between different platforms and applications.",
+        "step4": "Data migration between platforms.",
+        "descriptionStep4": "Data transfer ensuring the integrity and consistency of information."
+      }
+    ]
+  },
+  "WhyChoose": {
+    "title": "Why choose us",
+    "description": "At LumarSoft, we know that choosing the right partner for your software development needs is crucial. Although we are an emerging SME, our commitment to excellence and customer satisfaction is unwavering. Here are just a few reasons to choose us:",
+    "reasonCard": [
+      {
+        "title": "Innovation and Experience",
+        "description": "Our team brings a unique combination of solid technical expertise, offering innovative and creative solutions."
+      },
+      {
+        "title": "Personalized Approach",
+        "description": "Every project is unique. We work closely with you to tailor our solutions to your specific needs."
+      },
+      {
+        "title": "Quality and Reliability",
+        "description": "We prioritize quality in everything we do, delivering reliable products that exceed expectations."
+      },
+      {
+        "title": "Commitment to Your Success",
+        "description": "Your success is our priority. We commit to working with you at every stage of the project to ensure you achieve your goals."
+      },
+      {
+        "title": "Continuous Excellence",
+        "description": "We stay updated with the latest technologies and trends, ensuring you receive cutting-edge solutions."
+      },
+      {
+        "title": "Transparency and Honesty",
+        "description": "We believe in transparency and honesty in our business relationships. We'll keep you informed at every step of development."
+      }
+    ]
+  },
+  "Technologies":{
+    "title":"Technologies",
+    "description":"These are some of the technologies we use to develop your projects. your projects."
+  },
+  "About":{
+    "title1":"About us",
+    "a":"Visit LinkedIn",
+    "persons":[
+      {
+      "name":"Mateo Bodini",
+      "description":"CEO of LumarSoft, experience in software development and project software development and project management."
+    },
+    {
+      "name":"Lucas Quaroni",
+      "description":"CTO of LumarSoft, experience as a fullstack developer"
+    },
+    {
+      "name":"Marcelo Benitez",
+      "description":"CEO of LumarSoft, experience in software development and project software development and project management."
+    }
+  ]
+  },
+"Contact":{
+  "title":"Contact us at",
+  "subtitle": "Your opportunity for radical change starts here. Send us a message and let us take you to the next level.",
+  "form":
+  {"labelName":"Name",
+  "placeholderName":"Enter your name",
+  "labelEmail":"Email",
+  "placeholderEmail":"Enter your email",
+  "labelMessage":"Message",
+  "placeholderMessage":"Tell us a little about your goals and what you hope to achieve with LumarSoft.",
+  "button":"Send"
+  }
+},
+"Rights":"LumarSoft - All rights reserved - 2024"
+}

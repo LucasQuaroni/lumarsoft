@@ -2,7 +2,7 @@ import Navbar from "../components/navbar";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import Image from "next/image";
-import whatsApp from "../public/Icons/WhatsApp_icon.png";
+import whatsApp from "@/public/Icons/whatsapp.png";
 
 export const metadata = {
   title: "Lumar Soft",
