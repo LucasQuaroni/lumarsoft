@@ -6,7 +6,8 @@ import github from "../public/Icons/github.png";
 import { motion } from "framer-motion";
 import "./navbar.css";
 import { useParams } from "next/navigation";
-
+import spain from "../public/Icons/spain.png";
+import english from "../public/Icons/estadosUnidos.png";
 function Navbar() {
   const params = useParams();
 
@@ -24,7 +25,12 @@ function Navbar() {
     >
       <div className="flex items-center gap-5">
         <a href="">
-          <Image src={logo} width={60} height={60} alt="asd" />
+          <Image
+            src={logo}
+            width={60}
+            height={60}
+            alt="software consulting logo"
+          />
         </a>
         <div className="flex gap-5 mdn:hidden aTech">
           <a href="#services">
@@ -46,20 +52,17 @@ function Navbar() {
       <div className="flex gap-3 items-center">
         {params.lang === "en" ? (
           <a href="/es" className="font-semibold">
-            ES
+            <Image src={spain} width={40} height={40} />
           </a>
         ) : (
           <a href="/en" className="font-semibold">
-            EN
+            <Image src={english} width={40} height={40} />
           </a>
         )}
         <a href="https://github.com/LucasQuaroni/lumarsoft" target="_blank">
           <Image src={github} width={40} height={40} alt="asd" />
         </a>
-        <a
-          href="https://www.linkedin.com/in/lumar-soft-3805752b1/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/company/lumar-soft/" target="_blank">
           <Image src={linkedin} width={40} height={40} alt="asd" />
         </a>
       </div>
