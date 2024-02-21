@@ -11,7 +11,6 @@
   border-radius: 5px; /* Radio de los bordes del pulgar */
 }
 
-/* Cambiar el color del fondo de la barra de desplazamiento (opcional) */
 ::-webkit-scrollbar-track {
   background-color: #000000; /* Color del fondo */
 }
@@ -29,4 +28,3 @@
   -webkit-mask-image: radial-gradient(rgba(0,0,0,.45), transparent 70%);
   mask-image: radial-gradient(rgba(0,0,0,.60), transparent 70%);
 }
-
