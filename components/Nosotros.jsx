@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
-import MarvoAI from "../public/Icons/MarvoAI.jpeg";
-import LucasAI from "../public/Icons/LucasAI.jpeg";
 import "./nosotros.css";
+import Carrousel from "./carrousel";
 
 const Nosotros = ({ lenguaje }) => {
   return (
@@ -11,7 +9,7 @@ const Nosotros = ({ lenguaje }) => {
       id="nosotros"
     >
       <h1 className="text-5xl font-bold text-center">{lenguaje.title1}</h1>
-      <div className="grid grid-cols-2 smn:grid-cols-1 md:flex-row md:gap-10 ">
+      {/* <div className="grid-cols-2 smn:grid-cols-1 md:flex-row md:gap-10 hidden md:grid">
         <div className="image-container mb-10 md:mb-0">
           <Image
             src={MarvoAI}
@@ -52,7 +50,8 @@ const Nosotros = ({ lenguaje }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Carrousel />
     </section>
   );
 };

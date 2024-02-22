@@ -3,7 +3,10 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import WspBtn from "@/components/WspBtn";
 import Head from "next/head";
+
 <link rel="icon" href="/favicon.ico" sizes="any" />;
+
+
 export const metadata = {
   title: "LumarSoft",
   description:
@@ -13,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head style={{ scrollBehavior: "smooth" }}>
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
