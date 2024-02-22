@@ -1,16 +1,16 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { Tooltip } from "react-tooltip";
-
+import Image from "next/image";
 export default function Icon({ name, image, url }) {
   return (
     <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
       data-tooltip-id="my-tooltip"
       data-tooltip-content={name}
       className="hover:border-blue-500 hover:shadow-lg transition duration-300 ease-in-out border border-gray-800 rounded-lg p-3 flex justify-center items-center"
-      href={url}
-      target="_blank"
     >
       <Image
         src={image}

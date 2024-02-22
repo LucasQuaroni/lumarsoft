@@ -20,26 +20,26 @@ const WhyUs = ({ lenguaje }) => {
   ];
 
   const styleIcons = [
-    "text-3xl text-blue-500 mb-2 mx-auto",
+    "text-3xl text-violet-400 mb-2 mx-auto",
     "text-3xl text-yellow-500 mb-2 mx-auto",
     "text-3xl text-green-500 mb-2 mx-auto",
-    "text-3xl text-orange-500 mb-2 mx-auto",
+    "text-3xl text-red-500 mb-2 mx-auto",
     "text-3xl text-orange-500 mb-2 mx-auto",
     "text-3xl text-pink-500 mb-2 mx-auto",
   ];
 
   return (
-    <div className="max-w-5xl mx-auto mb-10 mt-40 text-center" id="whyUs">
+    <div className="max-w-5xl mx-auto mb-10 mt-40 text-center pt-14" id="whyUs">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, offset: 0.5 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h5 className="text-5xl font-semibold mb-6 smn:text-3xl">
+        <h5 className="text-5xl font-semibold mb-6 smn:text-3xl text-sky-500">
           {lenguaje.title}
         </h5>
-        <p className="mb-8 smn:text-sm">{lenguaje.description}</p>
+        <p className="mb-8 smn:text-sm smn:hidden">{lenguaje.description}</p>
       </motion.div>
 
       <motion.div
