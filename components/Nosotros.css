@@ -17,11 +17,11 @@
     align-items: center;
     justify-content: center;
   }
-
+  
   .image-container:hover .overlay {
     opacity: 1;
   }
-
+  
   .overlay-content {
     text-align: center;
   }
