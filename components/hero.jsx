@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
+import Typewriter from "typewriter-effect";
 
 function Hero({ lenguaje }) {
-
   const goContact = () => {
     const contact = document.getElementById("contact");
-    contact.scrollIntoView({ behavior: 'smooth' });
-};
+    contact.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <header className="min-h-screen w-full flex flex-col h-screen">
       <motion.section
@@ -18,14 +18,25 @@ function Hero({ lenguaje }) {
         <div className="flex flex-col -translate-y-20 mdn:-translate-y-0">
           <div className="tracking-tighter text-9xl 2xln:text-9xl lgn:text-8xl mdn:text-7xl smn:text-5xl font-semibold">
             <h1>{lenguaje.title1}</h1>
-            <h2 className="text-sky-600 font-bold">{lenguaje.title2}</h2>
+            {/* <h2 className="text-sky-600 font-bold">{lenguaje.title2}</h2> */}
+            <h2 className="text-sky-600 font-bold">
+              <Typewriter
+                options={{
+                  strings: lenguaje.title2,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h2>
           </div>
           <p className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg">
             {lenguaje.subtitle}
           </p>
         </div>
-        <button className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0"
-        onClick={goContact}>
+        <button
+          className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0"
+          onClick={goContact}
+        >
           {lenguaje.button}
         </button>
       </motion.section>

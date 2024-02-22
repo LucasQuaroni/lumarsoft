@@ -1,7 +1,14 @@
 {
   "Hero": {
     "title1": "Actúa ahora.",
-    "title2": "Crea el futuro.",
+    "title2": [
+      "Crea el futuro.",
+      "Impulsa tu éxito.",
+      "Eleva tu negocio.",
+      "Sé la diferencia.",
+      "Hazlo posible.",
+      "Hazlo realidad."
+    ],
     "subtitle": "Innovación que inspira, soluciones que impactan.",
     "button": "Contactar ahora"
   },
