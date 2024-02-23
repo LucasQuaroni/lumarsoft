@@ -21,56 +21,56 @@
         "title": "Custom Software Development",
         "description": "We offer specialized services in web and desktop application development, using modern and cutting-edge technologies to meet the specific needs of our clients.",
         "step1Time": "Step 1",
-        "step1": "Design of the application architecture.",
-        "descriptionStep1": "In this step, a detailed analysis of the client's requirements is carried out and the architecture of the application is designed.",
+        "step1": "Design and Architecture",
+        "descriptionStep1": "Detailed analysis of client requirements and designing the application architecture.",
         "step2Time": "Step 2",
-        "step2": "Application development.",
-        "descriptionStep2": "During this stage, the application logic is implemented following the design established in the previous phase. The necessary code is written to develop the required functions.",
+        "step2": "Development",
+        "descriptionStep2": "Implementation of application logic following the design established in the previous phase. Time to write code.",
         "step3Time": "Step 3",
-        "step3": "Application testing.",
-        "descriptionStep3": "In this phase, thorough tests are carried out to validate the correct operation of the application and ensure that it meets the requirements specified by the client.",
+        "step3": "Testing",
+        "descriptionStep3": "Comprehensive testing to validate the proper functioning of the application and ensure it meets the specified requirements.",
         "step4Time": "Step 4",
-        "step4": "Application deployment.",
-        "descriptionStep4": "Once the application has passed all tests and is ready for launch, it is deployed in a production environment."
-      },
-      {
+        "step4": "Implementation",
+        "descriptionStep4": "We implement in a production environment, ready for launch."
+        },
+        {
         "id": 2,
-        "title": "Web Pages Development and Online Stores Management",
+        "title": "Web Development and E-commerce Management",
         "description": "Design and development of web pages, along with management, maintenance, and support of online stores and sales channels, using modern and cutting-edge technologies.",
         "step1Time": "Step 1",
-        "step1": "Design of the web and online store architecture.",
-        "descriptionStep1": "The structure and layout of elements on the web page and the Ecommerce are defined, as well as navigation between different sections.",
+        "step1": "Design",
+        "descriptionStep1": "Definition of the structure and design of elements on the web page, as well as navigation between different sections.",
         "step2Time": "Step 2",
-        "step2": "Development of the web page and the Ecommerce.",
-        "descriptionStep2": "During this step, web pages or the Ecommerce are built, ensuring they are visually appealing and functional.",
+        "step2": "E-commerce Development",
+        "descriptionStep2": "Building web pages or online stores, ensuring they are visually appealing and functional.",
         "step3Time": "Step 3",
-        "step3": "Testing of the web page and the online store.",
-        "descriptionStep3": "Tests are carried out to ensure that the web page and the Ecommerce are displayed correctly on different devices and browsers and function properly.",
+        "step3": "Testing of Website and Online Store",
+        "descriptionStep3": "Tests are conducted to ensure that the website and e-commerce display and function correctly.",
         "step4Time": "Step 4",
-        "step4": "Deployment of the web page and the Ecommerce.",
-        "descriptionStep4": "The web page and the Ecommerce are uploaded to a server to be available on the Internet, ensuring that users can access them at any time."
-      },
-      {
+        "step4": "Implementation of the Website",
+        "descriptionStep4": "Loading and hosting on a server to be available on the Internet, accessible anytime, anywhere."
+        },
+        {
         "id": 3,
-        "title": "Integration and Systems Migration Services",
-        "description": "We help companies integrate and migrate their existing systems to new platforms or technologies, optimizing their processes and maximizing the value of their investments in information technology.",
+        "title": "System Integration and Migration Services",
+        "description": "Integration and migration of existing systems to new platforms or technologies, optimizing their processes and maximizing the value of their investments.",
         "step1Time": "Step 1",
-        "step1": "Assessment of current technological infrastructure.",
-        "descriptionStep1": "Detailed analysis to identify areas for improvement and opportunities for integration and migration.",
+        "step1": "Evaluation of Current Technological Infrastructure",
+        "descriptionStep1": "Detailed analysis to identify areas of improvement and integration and migration opportunities.",
         "step2Time": "Step 2",
-        "step2": "Design and implementation of migration strategies.",
+        "step2": "Design and Implementation of Migration Strategies",
         "descriptionStep2": "Planning and execution of data transfer and configuration of new systems.",
         "step3Time": "Step 3",
-        "step3": "Integration of enterprise systems.",
-        "descriptionStep3": "We ensure interoperability and effective communication between different platforms and applications.",
+        "step3": "Integration of Business Systems",
+        "descriptionStep3": "Validation of interoperability and effective communication between different platforms and applications.",
         "step4Time": "Step 4",
-        "step4": "Data migration between platforms.",
+        "step4": "Data Migration Between Platforms",
         "descriptionStep4": "Data transfer ensuring the integrity and consistency of information."
-      }
+        }
     ]
   },
   "WhyChoose": {
-    "title": "Why choose us",
+    "title": "Why us?",
     "description": "At LumarSoft, we know that choosing the right partner for your software development needs is crucial. Our commitment to excellence and customer satisfaction is unwavering. Here are just a few reasons to choose us:",
     "reasonCard": [
       {
@@ -104,7 +104,7 @@
     "description": "These are some of the technologies we use to develop your projects. your projects."
   },
   "About": {
-    "title1": "About us",
+    "title1": "About LumarSoft",
     "a": "Visit LinkedIn",
     "persons": [
       {
@@ -122,7 +122,7 @@
     ]
   },
   "Contact": {
-    "title": "Contact us at",
+    "title": "Contact us",
     "subtitle": "Your opportunity for radical change starts here. Send us a message and let us take you to the next level.",
     "form": {
       "labelName": "Name",
