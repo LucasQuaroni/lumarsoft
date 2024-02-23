@@ -39,10 +39,10 @@ function Navbar() {
             {params.lang === "es" ? "Nuestros Servicios" : "Our Services"}
           </a>
           <a href="#whyUs">
-            {params.lang === "es" ? "¿Por qué elegirnos?" : "Why Choose Us?"}
+            {params.lang === "es" ? "¿Por qué elegirnos?" : "Why Us?"}
           </a>
           <a href="#nosotros">
-            {params.lang === "es" ? "Sobre Nosotros" : "About Us"}
+            {params.lang === "es" ? "Sobre Nosotros" : "About LumarSoft"}
           </a>
           <a href="#technologies">
             {params.lang === "es" ? "Tecnologías" : "Technologies"}
