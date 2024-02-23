@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import Image from "next/image";
 import logo from "../public/Icons/Lumar.png";
 import linkedin from "../public/Icons/linkedin.png";
@@ -6,6 +7,8 @@ import github from "../public/Icons/github.png";
 import { motion } from "framer-motion";
 import "./navbar.css";
 import { useParams } from "next/navigation";
+import spain from "../public/Icons/spain.png";
+import english from "../public/Icons/estadosUnidos.png";
 
 function Navbar() {
   const params = useParams();
@@ -23,21 +26,26 @@ function Navbar() {
       }}
     >
       <div className="flex items-center gap-5">
-        <a href="">
-          <Image src={logo} width={60} height={60} alt="asd" />
+        <a href="/">
+          <Image
+            src={logo}
+            width={60}
+            height={60}
+            alt="Logo consultora de software LumarSoft"
+          />
         </a>
         <div className="flex gap-5 mdn:hidden aTech">
           <a href="#services">
-            {params.lang === "es" ? "Servicios" : "Services"}
+            {params.lang === "es" ? "Nuestros Servicios" : "Our Services"}
           </a>
           <a href="#whyUs">
-            {params.lang === "es" ? "Por que nosotros?" : "Why we?"}
+            {params.lang === "es" ? "¿Por qué elegirnos?" : "Why Choose Us?"}
           </a>
-          <a href="nosotros">
-            {params.lang === "es" ? "Nosotros" : "About us"}
+          <a href="#nosotros">
+            {params.lang === "es" ? "Sobre Nosotros" : "About Us"}
           </a>
           <a href="#technologies">
-            {params.lang === "es" ? "Tecnologias" : "Technologies"}
+            {params.lang === "es" ? "Tecnologías" : "Technologies"}
           </a>
           <a href="#contact">{params.lang === "es" ? "Contacto" : "Contact"}</a>
         </div>
@@ -45,22 +53,27 @@ function Navbar() {
 
       <div className="flex gap-3 items-center">
         {params.lang === "en" ? (
-          <a href="/es" className="font-semibold">
-            ES
+          <a href="/es" className="font-semibold" rel="noopener noreferrer">
+            <Image src={spain} width={40} height={40} alt="es_ES" title="Spanish" />
           </a>
         ) : (
-          <a href="/en" className="font-semibold">
-            EN
+          <a href="/en" className="font-semibold" rel="noopener noreferrer">
+            <Image src={english} width={40} height={40} alt="en_GB" title="English" />
           </a>
         )}
-        <a href="https://github.com/LucasQuaroni/lumarsoft" target="_blank">
-          <Image src={github} width={40} height={40} alt="asd" />
+        <a
+          href="https://github.com/LucasQuaroni/lumarsoft"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image src={github} width={40} height={40} alt="GitHub logo" />
         </a>
         <a
-          href="https://www.linkedin.com/in/lumar-soft-3805752b1/"
+          href="https://www.linkedin.com/company/lumar-soft/"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          <Image src={linkedin} width={40} height={40} alt="asd" />
+          <Image src={linkedin} width={40} height={40} alt="LinkedIn logo" />
         </a>
       </div>
     </motion.nav>

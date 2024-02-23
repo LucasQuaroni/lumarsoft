@@ -1,10 +1,16 @@
-
 {
   "Hero": {
     "title1": "Actúa ahora.",
-    "title2": "Crea el futuro.",
+    "title2": [
+      "Crea el futuro.",
+      "Impulsa tu éxito.",
+      "Eleva tu negocio.",
+      "Sé la diferencia.",
+      "Hazlo posible.",
+      "Hazlo realidad."
+    ],
     "subtitle": "Innovación que inspira, soluciones que impactan.",
-    "button": "Comenzar"
+    "button": "Contactar ahora"
   },
   "SecondSkill": {
     "title1": "Potenciando tu empresa",
@@ -14,12 +20,16 @@
         "id": 1,
         "title": "Desarrollo de Software Personalizado",
         "description": "Ofrecemos servicios especializados en desarrollo de aplicaciones web y de escritorio, utilizando tecnologías modernas y de vanguardia para satisfacer las necesidades específicas de nuestros clientes.",
+        "step1Time": "Paso 1",
         "step1": "Diseño de la arquitectura de la aplicación.",
         "descriptionStep1": "En esta etapa, se realiza un análisis detallado de los requisitos del cliente y se diseña la arquitectura de la aplicación.",
+        "step2Time": "Paso 2",
         "step2": "Desarrollo de la aplicación.",
         "descriptionStep2": "Durante esta etapa, se implementa la lógica de la aplicación siguiendo el diseño establecido en la fase anterior. Se escribe el código necesario para desarrollar las funciones requeridas.",
+        "step3Time": "Paso 3",
         "step3": "Pruebas de la aplicación.",
         "descriptionStep3": "En esta fase, se realizan pruebas exhaustivas para validar el correcto funcionamiento de la aplicación y asegurar que cumple con los requisitos especificados por el cliente.",
+        "step4Time": "Paso 4",
         "step4": "Implementación de la aplicación.",
         "descriptionStep4": "Una vez que la aplicación ha pasado todas las pruebas y está lista para su lanzamiento, se implementa en un entorno de producción."
       },
@@ -27,12 +37,16 @@
         "id": 2,
         "title": "Desarrollo de Páginas Web y Gestión de Tiendas en Línea",
         "description": "Diseño y desarrollo de páginas web, junto con la gestión, mantenimiento y soporte de tiendas en línea y canales de ventas, utilizando tecnologías modernas y de vanguardia.",
+        "step1Time": "Paso 1",
         "step1": "Diseño de la arquitectura de la página web y la tienda en línea.",
         "descriptionStep1": "Se define la estructura y el diseño de los elementos en la página web y el comercio electrónico, así como la navegación entre diferentes secciones.",
+        "step2Time": "Paso 2",
         "step2": "Desarrollo de la página web y el comercio electrónico.",
         "descriptionStep2": "Durante este paso, se construyen las páginas web o el comercio electrónico, asegurando que sean visualmente atractivos y funcionales.",
+        "step3Time": "Paso 3",
         "step3": "Pruebas de la página web y el comercio en línea.",
         "descriptionStep3": "Se realizan pruebas para garantizar que la página web y el comercio electrónico se muestren correctamente en diferentes dispositivos y navegadores y funcionen correctamente.",
+        "step4Time": "Paso 4",
         "step4": "Implementación de la página web y el comercio electrónico.",
         "descriptionStep4": "La página web y el comercio electrónico se cargan en un servidor para estar disponibles en Internet, asegurando que los usuarios puedan acceder a ellos en cualquier momento."
       },
@@ -40,12 +54,16 @@
         "id": 3,
         "title": "Servicios de Integración y Migración de Sistemas",
         "description": "Ayudamos a las empresas a integrar y migrar sus sistemas existentes a nuevas plataformas o tecnologías, optimizando sus procesos y maximizando el valor de sus inversiones en tecnología de la información.",
+        "step1Time": "Paso 1",
         "step1": "Evaluación de la infraestructura tecnológica actual.",
         "descriptionStep1": "Análisis detallado para identificar áreas de mejora y oportunidades de integración y migración.",
+        "step2Time": "Paso 2",
         "step2": "Diseño e implementación de estrategias de migración.",
         "descriptionStep2": "Planificación y ejecución de la transferencia de datos y configuración de nuevos sistemas.",
+        "step3Time": "Paso 3",
         "step3": "Integración de sistemas empresariales.",
         "descriptionStep3": "Nos aseguramos de la interoperabilidad y la comunicación efectiva entre diferentes plataformas y aplicaciones.",
+        "step4Time": "Paso 4",
         "step4": "Migración de datos entre plataformas.",
         "descriptionStep4": "Transferencia de datos garantizando la integridad y consistencia de la información."
       }
@@ -53,7 +71,7 @@
   },
   "WhyChoose": {
     "title": "¿Por qué elegirnos?",
-    "description": "En LumarSoft, sabemos que elegir el socio adecuado para tus necesidades de desarrollo de software es crucial. Aunque somos una PYME emergente, nuestro compromiso con la excelencia y la satisfacción del cliente es inquebrantable. Aquí hay algunas razones para elegirnos:",
+    "description": "En LumarSoft, sabemos que elegir el socio adecuado para tus necesidades de desarrollo de software es crucial. Nuestro compromiso con la excelencia y la satisfacción del cliente es inquebrantable. Aquí hay algunas razones para elegirnos:",
     "reasonCard": [
       {
         "title": "Innovación y Experiencia",
@@ -98,15 +116,13 @@
         "description": "CTO de LumarSoft, experiencia como desarrollador fullstack."
       },
       {
-
-
         "name": "Marcelo Benitez",
         "description": "CEO de LumarSoft, experiencia en desarrollo de software y gestión de proyectos."
       }
     ]
   },
   "Contact": {
-    "title": "Contáctanos en",
+    "title": "Contáctanos",
     "subtitle": "Tu oportunidad para un cambio radical comienza aquí. Envíanos un mensaje y déjanos llevarte al siguiente nivel.",
     "form": {
       "labelName": "Nombre",

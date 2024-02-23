@@ -35,7 +35,7 @@ const TimeLine = ({ lenguaje }) => {
         >
           <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 bg-sky-400 animate-pulse animate-duration-[900ms]"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400">
-            Paso 1
+            {lenguaje.step1Time}
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {lenguaje.step1}
@@ -53,7 +53,7 @@ const TimeLine = ({ lenguaje }) => {
         >
           <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5  bg-sky-400 animate-pulse animate-duration-[900ms]"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Paso 2
+            {lenguaje.step2Time}
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {lenguaje.step2}
@@ -71,7 +71,7 @@ const TimeLine = ({ lenguaje }) => {
         >
           <div className="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 bg-sky-400 animate-pulse animate-duration-[900ms]"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Paso 3
+            {lenguaje.step3Time}
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {lenguaje.step3}
@@ -89,7 +89,7 @@ const TimeLine = ({ lenguaje }) => {
         >
           <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 bg-sky-400 animate-pulse animate-duration-[900ms]"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            Paso 4
+            {lenguaje.step4Time}
           </time>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
             {lenguaje.step4}

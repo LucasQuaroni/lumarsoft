@@ -34,7 +34,7 @@ const Technologies = ({lenguaje}) => {
 
   return (
     <section
-      className="w-full pb-40 flex items-center flex-col"
+      className="w-full pb-10 flex items-center flex-col"
       id="technologies"
     >
       <motion.div
@@ -43,7 +43,7 @@ const Technologies = ({lenguaje}) => {
         viewport={{ once: true, offset: 0.5 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl">
+        <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl text-sky-500">
          {lenguaje.title}
         </h3>
         <p className="text-center text-xl mt-4 lgn:text-base">

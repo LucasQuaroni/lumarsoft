@@ -3,17 +3,16 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 10px; /* Ancho de la barra de desplazamiento */
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(2, 132, 199); /* Color del pulgar de la barra de desplazamiento */
-  border-radius: 5px; /* Radio de los bordes del pulgar */
+  background-color: rgb(2, 132, 199);
+  border-radius: 5px;
 }
 
-/* Cambiar el color del fondo de la barra de desplazamiento (opcional) */
 ::-webkit-scrollbar-track {
-  background-color: #000000; /* Color del fondo */
+  background-color: #000000;
 }
 
 .blurmiddle {
@@ -22,11 +21,21 @@
   content: "";
   width: 150%;
   height: 100rem;
-  top: 50%;	
-  left: 0;  
-  transform: translate(-11%,0%);
-  background: linear-gradient(83.21deg, rgba(0, 163, 255, 0.10) 0%, rgba(0, 163, 255, 0.20) 50%, rgba(0, 163, 255, 0.10) 100%);
-  -webkit-mask-image: radial-gradient(rgba(0,0,0,.45), transparent 70%);
-  mask-image: radial-gradient(rgba(0,0,0,.60), transparent 70%);
+  top: 50%;
+  left: 0;
+  transform: translate(-11%, 0%);
+  background: linear-gradient(
+    83.21deg,
+    rgba(0, 163, 255, 0.1) 0%,
+    rgba(0, 163, 255, 0.2) 50%,
+    rgba(0, 163, 255, 0.1) 100%
+  );
+  -webkit-mask-image: radial-gradient(rgba(0, 0, 0, 0.45), transparent 70%);
+  mask-image: radial-gradient(rgba(0, 0, 0, 0.6), transparent 70%);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 

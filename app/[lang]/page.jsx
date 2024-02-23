@@ -27,7 +27,7 @@ export default async function Page({ params: { lang } }) {
 
         <Contact lenguaje={dictionary.Contact} />
 
-        <div className="flex justify-center items-center gap-4 mb-2">
+        <div className="flex justify-center items-center gap-4 mb-2 smn:text-sm smn:mb-0">
           <span>{dictionary.Rights}</span>
         </div>
       </div>
