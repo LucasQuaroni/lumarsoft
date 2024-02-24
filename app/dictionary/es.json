@@ -126,11 +126,11 @@
     "subtitle": "Tu oportunidad para un cambio radical comienza aquí. Envíanos un mensaje y déjanos llevarte al siguiente nivel.",
     "form": {
       "labelName": "Nombre",
-      "placeholderName": "Ingresa tu nombre",
+      "placeholderName": "",
       "labelEmail": "Correo electrónico",
-      "placeholderEmail": "Ingresa tu correo electrónico",
+      "placeholderEmail": "",
       "labelMessage": "Mensaje",
-      "placeholderMessage": "Cuéntanos un poco sobre tus objetivos y qué esperas lograr con LumarSoft.",
+      "placeholderMessage": "",
       "button": "Enviar"
     }
   },

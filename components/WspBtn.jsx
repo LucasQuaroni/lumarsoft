@@ -16,7 +16,7 @@ const WspBtn = () => {
         rel="noopener noreferrer"
         className="fixed bottom-10 right-10 z-50 smn:right-3"
       >
-        <Image src={whatsApp} alt="WhatsApp Logo" width={70} height={70}  className="smn:w-14 smn:h-14"/>
+        <Image src={whatsApp} alt="WhatsApp Logo" width={60} height={60}  className="smn:w-14 smn:h-14"/>
       </a>
     </motion.div>
   );
