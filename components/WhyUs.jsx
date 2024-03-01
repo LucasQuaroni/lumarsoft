@@ -36,7 +36,7 @@ const WhyUs = ({ lenguaje }) => {
         viewport={{ once: true, offset: 0.5 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h5 className="text-5xl font-semibold mb-6 smn:text-3xl text-sky-500">
+        <h5 className="text-5xl font-semibold mb-6 smn:text-3xl text-sky-500 bg-gray-800 rounded-lg  inline-block px-4 py-1">
           {lenguaje.title}
         </h5>
         <p className="mb-8 smn:text-sm smn:hidden">{lenguaje.description}</p>

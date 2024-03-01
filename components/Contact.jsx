@@ -19,20 +19,25 @@ const Contact = ({ lenguaje }) => {
   };
 
   return (
-    <div className="h-screen w-full flex justify-center items-center">
+    <div className=" w-full flex justify-center items-center">
       <section className="text-white body-font" id="contact">
-        <div className="py-14">
+        <div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, offset: 0.5 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <div className="flex flex-col text-center mb-12">
-              <h2 className="text-5xl font-semibold mb-4 text-sky-500">
+            <span className="flex justify-center">
+              <h2 className="text-5xl font-semibold mb-4 text-sky-500 bg-gray-800 rounded-lg inline-block px-4 py-1">
                 {lenguaje.title}
               </h2>
-              <p className="text-base text-[#a5a5a5]">{lenguaje.subtitle}</p>
+            </span>
+
+            <div className="flex flex-col text-center mb-12">
+              <p className="text-base text-gray-400 text-wrap">
+                {lenguaje.subtitle}
+              </p>
             </div>
           </motion.div>
 
@@ -51,7 +56,7 @@ const Contact = ({ lenguaje }) => {
                     type="text"
                     id="name"
                     name="name"
-                    className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out  smn:h-10 mdn:h-12 2xln:h-14 lgn:h-16 smn:text-sm"
                     placeholder={lenguaje.form.placeholderName}
                     required
                   />
@@ -66,7 +71,7 @@ const Contact = ({ lenguaje }) => {
                     type="email"
                     id="email"
                     name="email"
-                    className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
+                    className="w-full bg-black rounded border border-zinc-700 text-base outline-none text-white py-1 px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out smn:h-10 mdn:h-12 2xln:h-14 lgn:h-16 smn:text-sm"
                     placeholder={lenguaje.form.placeholderEmail}
                     required
                   />
@@ -80,7 +85,7 @@ const Contact = ({ lenguaje }) => {
                   <textarea
                     id="message"
                     name="message"
-                    className="resize-none w-full bg-black rounded border border-zinc-700 h-32 text-base outline-none text-white px-3 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out"
+                    className="resize-none w-full bg-black rounded border border-zinc-700 h-32 text-base outline-none text-white px-4 py-2 leading-8 focus:border-sky-500 transition-colors duration-200 ease-in-out smn:h-40 mdn:h-48 2xln:h-56 lgn:h-64"
                     placeholder={lenguaje.form.placeholderMessage}
                     required
                   ></textarea>

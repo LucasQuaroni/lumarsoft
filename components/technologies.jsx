@@ -5,7 +5,7 @@ import React from "react";
 import Icon from "./icon";
 import { motion } from "framer-motion";
 
-const Technologies = ({lenguaje}) => {
+const Technologies = ({ lenguaje }) => {
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -43,11 +43,13 @@ const Technologies = ({lenguaje}) => {
         viewport={{ once: true, offset: 0.5 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <h3 className="text-6xl font-semibold text-center mt-16 lgn:text-5xl text-sky-500">
-         {lenguaje.title}
-        </h3>
-        <p className="text-center text-xl mt-4 lgn:text-base">
-        {lenguaje.description}
+        <span className="flex justify-center">
+          <h3 className="text-5xl font-semibold text-center mt-16 lgn:text-5xl text-sky-500 bg-gray-800 rounded-lg  inline-block px-4 py-1">
+            {lenguaje.title}
+          </h3>
+        </span>
+        <p className="text-center text-xl mt-4 lgn:text-base text-gray-400">
+          {lenguaje.description}
         </p>
       </motion.div>
 
@@ -64,7 +66,6 @@ const Technologies = ({lenguaje}) => {
             initial={{ opacity: 0, y: 30 }}
             variants={itemAnimado}
             key={tech.id}
-            
           >
             <Icon
               name={tech.name}

@@ -10,7 +10,7 @@
       "Hazlo realidad."
     ],
     "subtitle": "Innovación que inspira, soluciones que impactan.",
-    "button": "Contactar ahora"
+    "button": "Contactar"
   },
   "SecondSkill": {
     "title1": "Potenciando tu empresa",
@@ -125,14 +125,13 @@
     "title": "Contáctanos",
     "subtitle": "Tu oportunidad para un cambio radical comienza aquí. Envíanos un mensaje y déjanos llevarte al siguiente nivel.",
     "form": {
-      "labelName": "Nombre",
-      "placeholderName": "",
-      "labelEmail": "Correo electrónico",
-      "placeholderEmail": "",
-      "labelMessage": "Mensaje",
-      "placeholderMessage": "",
+      "labelName": "",
+      "placeholderName": "Nombre completo*",
+      "labelEmail": "",
+      "placeholderEmail": "Correo electrónico*",
+      "labelMessage": "",
+      "placeholderMessage": "Escribanos sus requisitos en detalle.  Cuanto más sepamos sobre su increíble idea, mejor podremos guiarlo y ayudarlo.*",
       "button": "Enviar"
     }
-  },
-  "Rights": "LumarSoft - Todos los derechos reservados - 2024"
+  }
 }

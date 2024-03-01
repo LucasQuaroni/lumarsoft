@@ -10,7 +10,7 @@
       "Make it real."
     ],
     "subtitle": "Innovation that inspires, solutions that impact.",
-    "button": "Contact us now"
+    "button": "Contact Us"
   },
   "SecondSkill": {
     "title1": "Empowering your company",
@@ -126,13 +126,13 @@
     "subtitle": "Your opportunity for radical change starts here. Send us a message and let us take you to the next level.",
     "form": {
       "labelName": "Name",
-      "placeholderName": "Enter your name",
+      "placeholderName": "Enter your name*",
       "labelEmail": "Email",
-      "placeholderEmail": "Enter your email",
+      "placeholderEmail": "Enter your email*",
       "labelMessage": "Message",
-      "placeholderMessage": "Tell us a little about your goals and what you hope to achieve with LumarSoft.",
+      "placeholderMessage": "Write us your requirements in detail.  The more we know about your amazing idea, the better we can guide you and help you.*",
       "button": "Send"
     }
-  },
-  "Rights": "LumarSoft - All rights reserved - 2024"
+  }
+  
 }
