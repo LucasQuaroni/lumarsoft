@@ -18,8 +18,7 @@ function Hero({ lenguaje }) {
         <div className="flex flex-col -translate-y-20 mdn:-translate-y-0">
           <div className="tracking-tighter text-9xl 2xln:text-9xl lgn:text-8xl mdn:text-7xl smn:text-5xl font-semibold">
             <h1>{lenguaje.title1}</h1>
-            {/* <h2 className="text-sky-600 font-bold">{lenguaje.title2}</h2> */}
-            <h2 className="text-sky-600 font-bold">
+            <h2 className="text-sky-600 font-bold smn:text-4xl">
               <Typewriter
                 options={{
                   strings: lenguaje.title2,
@@ -29,15 +28,16 @@ function Hero({ lenguaje }) {
               />
             </h2>
           </div>
-          <p className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg">
+          <p className="text-2xl text-zinc-500 text-center mdn:text-xl smn:text-lg mt-5">
             {lenguaje.subtitle}
           </p>
         </div>
+
         <button
-          className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0"
+          className="bg-sky-600 px-5 py-3 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 -translate-y-10 lgn:-translate-y-0 smn:px-3 smn:py-2 smn:text-sm mdn:px-4 mdn:py-3 mdn:text-base 2xln:px-5 2xln:py-4 2xln:text-xl 2xln:-translate-y-0"
           onClick={goContact}
         >
-          {lenguaje.button}
+          <span className=" animation-pulse">{lenguaje.button}</span>
         </button>
       </motion.section>
 

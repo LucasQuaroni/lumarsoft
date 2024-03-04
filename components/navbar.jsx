@@ -1,5 +1,4 @@
 "use client";
-"use client";
 import Image from "next/image";
 import logo from "../public/Icons/Lumar.png";
 import linkedin from "../public/Icons/linkedin.png";
@@ -15,7 +14,7 @@ function Navbar() {
 
   return (
     <motion.nav
-      className="w-full flex absolute px-16 py-2 items-center gap-4 font-semibold justify-between lgn:px-10 smn:px-4 z-50"
+      className="w-full flex absolute px-16 py-2 items-center gap-4 font-semibold justify-around lgn:px-10 smn:px-4 z-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{
@@ -25,7 +24,7 @@ function Navbar() {
         delay: 0.1,
       }}
     >
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-5 justify-center">
         <a href="/">
           <Image
             src={logo}
@@ -34,31 +33,43 @@ function Navbar() {
             alt="Logo consultora de software LumarSoft"
           />
         </a>
-        <div className="flex gap-5 mdn:hidden aTech">
+        <div className="flex gap-5 mdn:hidden aTech items-center">
           <a href="#services">
             {params.lang === "es" ? "Nuestros Servicios" : "Our Services"}
           </a>
           <a href="#whyUs">
             {params.lang === "es" ? "¿Por qué elegirnos?" : "Why Us?"}
           </a>
-          <a href="#nosotros">
-            {params.lang === "es" ? "Sobre Nosotros" : "About LumarSoft"}
-          </a>
           <a href="#technologies">
             {params.lang === "es" ? "Tecnologías" : "Technologies"}
           </a>
-          <a href="#contact">{params.lang === "es" ? "Contacto" : "Contact"}</a>
+          <a href="#nosotros">
+            {params.lang === "es" ? "Sobre Nosotros" : "About LumarSoft"}
+          </a>
+      
         </div>
       </div>
 
       <div className="flex gap-3 items-center">
         {params.lang === "en" ? (
           <a href="/es" className="font-semibold" rel="noopener noreferrer">
-            <Image src={spain} width={40} height={40} alt="es_ES" title="Spanish" />
+            <Image
+              src={spain}
+              width={40}
+              height={40}
+              alt="es_ES"
+              title="Spanish"
+            />
           </a>
         ) : (
           <a href="/en" className="font-semibold" rel="noopener noreferrer">
-            <Image src={english} width={40} height={40} alt="en_GB" title="English" />
+            <Image
+              src={english}
+              width={40}
+              height={40}
+              alt="en_GB"
+              title="English"
+            />
           </a>
         )}
         <a

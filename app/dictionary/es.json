@@ -10,7 +10,7 @@
       "Hazlo realidad."
     ],
     "subtitle": "Innovación que inspira, soluciones que impactan.",
-    "button": "Contactar ahora"
+    "button": "Contactar"
   },
   "SecondSkill": {
     "title1": "Potenciando tu empresa",
@@ -105,34 +105,29 @@
   },
   "About": {
     "title1": "Sobre nosotros",
-    "a": "Visita LinkedIn",
-    "persons": [
-      {
-        "name": "Mateo Bodini",
-        "description": "CEO de LumarSoft, experiencia en desarrollo de software y gestión de proyectos."
-      },
-      {
-        "name": "Lucas Quaroni",
-        "description": "CTO de LumarSoft, experiencia como desarrollador fullstack."
-      },
-      {
-        "name": "Marcelo Benitez",
-        "description": "CEO de LumarSoft, experiencia en desarrollo de software y gestión de proyectos."
-      }
-    ]
+    "subtitle": "Tu Socio en Desarrollo de Software",
+    "description": "Somos una consultora de software especializada en ofrecer soluciones personalizadas y eficientes para empresas de todos los tamaños. Nuestro equipo de expertos en desarrollo está comprometido en convertirse en tu socio estratégico para alcanzar tus objetivos tecnológicos.",
+    "subtitle2": "Nuestros Valores",
+    "items": [
+      "Compromiso con la excelencia en cada proyecto.",
+      "Transparencia y honestidad en todas nuestras interacciones.",
+      "Colaboración estrecha y comunicación abierta con nuestros clientes.",
+      "Innovación constante y búsqueda de soluciones creativas."
+    ],
+    "subtitle3": "Nuestra misión",
+    "description2": "En LumarSoft, nos comprometemos a brindar soluciones de software de alta calidad que impulsen el éxito de nuestros clientes. Nuestra misión es colaborar estrechamente con cada cliente para entender sus necesidades y ofrecer soluciones innovadoras y personalizadas que superen sus expectativas. Estamos dedicados a proporcionar un servicio excepcional, impulsado por la excelencia técnica y el compromiso con la satisfacción del cliente."
   },
   "Contact": {
     "title": "Contáctanos",
     "subtitle": "Tu oportunidad para un cambio radical comienza aquí. Envíanos un mensaje y déjanos llevarte al siguiente nivel.",
     "form": {
-      "labelName": "Nombre",
-      "placeholderName": "",
-      "labelEmail": "Correo electrónico",
-      "placeholderEmail": "",
-      "labelMessage": "Mensaje",
-      "placeholderMessage": "",
+      "labelName": "",
+      "placeholderName": "Nombre completo*",
+      "labelEmail": "",
+      "placeholderEmail": "Correo electrónico*",
+      "labelMessage": "",
+      "placeholderMessage": "Escribanos sus requisitos en detalle.  Cuanto más sepamos sobre su increíble idea, mejor podremos guiarlo y ayudarlo.*",
       "button": "Enviar"
     }
-  },
-  "Rights": "LumarSoft - Todos los derechos reservados - 2024"
+  }
 }

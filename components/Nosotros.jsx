@@ -1,62 +1,53 @@
+"use client"
+
 import React from "react";
 import "./nosotros.css";
-import Carrousel from "./Carrousel";
-import Image from "next/image";
-import { Lucas, Mateo } from "@/lib/imgProvider";
+import { FaCheck } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const Nosotros = ({ lenguaje }) => {
   return (
-    <section
-      className="w-full min-h-screen h-full flex flex-col items-center justify-center gap-20 pt-10 text-sky-500"
+    <motion.section
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, offset: 0.5 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+      className="w-full min-h-screen h-full flex flex-col items-center justify-center "
       id="nosotros"
     >
-      <h1 className="text-5xl font-bold text-center">{lenguaje.title1}</h1>
-      <div className="grid-cols-2 smn:grid-cols-1 md:flex-row md:gap-10 hidden md:grid">
-        <div className="image-container mb-10 md:mb-0">
-          <Image
-            src={Mateo}
-            width={380}
-            alt="Foto de Mateo Bodini"
-            className="rounded-xl"
-          />
-          <div className="overlay">
-            <div className="overlay-content">
-              <h5>{lenguaje.persons[0].name}</h5>
-              <p>{lenguaje.persons[0].description}</p>
-              <a
-                href="https://www.linkedin.com/in/mateobodini"
-                target="_blank"
-              >
-                {lenguaje.a}
-              </a>
+      <div className="space-y-2">
+        <div className="space-y-2">
+          <div className="items-center flex justify-center">
+            <div className="inline-block rounded-lg px-7 py-2 text-5xl font-semibold bg-gray-800 text-sky-500 mb-2">
+              {lenguaje.title1}
             </div>
           </div>
+          <div className="space-y-2">
+            <h2 className="text-3xl font-bold tracking-tighter">
+              {lenguaje.subtitle}
+            </h2>
+            <p className="max-w-3xl text-gray-400">{lenguaje.description}</p>
+          </div>
         </div>
-        <div className="image-container">
-          <Image
-            src={Lucas}
-            width={380}
-            alt="Foto de Lucas Quaroni"
-            className="rounded-xl"
-          />
-          <div className="overlay">
-            <div className="overlay-content">
-              <h5>{lenguaje.persons[1].name}</h5>
-              <p>{lenguaje.persons[1].description}</p>
-              <a
-                href="https://www.linkedin.com/in/lucasquaroni/"
-                target="_blank"
-              >
-                {lenguaje.a}
-              </a>
-            </div>
+        <div className="space-y-4">
+          <div className="space-y-2">
+            <h3 className="text-2xl font-bold">{lenguaje.subtitle2}</h3>
+            <ul className="grid gap-2">
+              {lenguaje.items.map((item, index) => (
+                <li key={index} className="flex items-start space-x-2">
+                  <FaCheck className="inline-block h-4 w-4" />
+                  <span className="text-sm leading-none">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="space-y-2">
+            <h3 className="text-2xl font-bold">{lenguaje.subtitle3}</h3>
+            <p className="max-w-3xl text-gray-400">{lenguaje.description2}</p>
           </div>
         </div>
       </div>
-
-      <Carrousel/>
-  
-    </section>
+    </motion.section>
   );
 };
 

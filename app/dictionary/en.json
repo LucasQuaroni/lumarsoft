@@ -10,7 +10,7 @@
       "Make it real."
     ],
     "subtitle": "Innovation that inspires, solutions that impact.",
-    "button": "Contact us now"
+    "button": "Contact Us"
   },
   "SecondSkill": {
     "title1": "Empowering your company",
@@ -104,35 +104,31 @@
     "description": "These are some of the technologies we use to develop your projects. your projects."
   },
   "About": {
-    "title1": "About LumarSoft",
-    "a": "Visit LinkedIn",
-    "persons": [
-      {
-        "name": "Mateo Bodini",
-        "description": "CEO of LumarSoft, experience in software development and project software development and project management."
-      },
-      {
-        "name": "Lucas Quaroni",
-        "description": "CTO of LumarSoft, experience as a fullstack developer"
-      },
-      {
-        "name": "Marcelo Benitez",
-        "description": "CEO of LumarSoft, experience in software development and project software development and project management."
-      }
-    ]
+    "title1": "About Us",
+    "subtitle": "Your Partner in Software Development",
+    "description": "We are a software consultancy specialized in providing personalized and efficient solutions for businesses of all sizes. Our team of development experts is committed to becoming your strategic partner in achieving your technological goals.",
+    "subtitle2": "Our Values",
+    "items": [
+      "Commitment to excellence in every project.",
+      "Transparency and honesty in all our interactions.",
+      "Close collaboration and open communication with our clients.",
+      "Constant innovation and pursuit of creative solutions."
+    ],
+    "subtitle3": "Our Mission",
+    "description2": "At LumarSoft, we are committed to providing high-quality software solutions that drive our clients' success. Our mission is to collaborate closely with each client to understand their needs and deliver innovative and personalized solutions that exceed their expectations. We are dedicated to providing exceptional service, driven by technical excellence and commitment to customer satisfaction."
   },
   "Contact": {
     "title": "Contact us",
     "subtitle": "Your opportunity for radical change starts here. Send us a message and let us take you to the next level.",
     "form": {
       "labelName": "Name",
-      "placeholderName": "Enter your name",
+      "placeholderName": "Enter your name*",
       "labelEmail": "Email",
-      "placeholderEmail": "Enter your email",
+      "placeholderEmail": "Enter your email*",
       "labelMessage": "Message",
-      "placeholderMessage": "Tell us a little about your goals and what you hope to achieve with LumarSoft.",
+      "placeholderMessage": "Write us your requirements in detail.  The more we know about your amazing idea, the better we can guide you and help you.*",
       "button": "Send"
     }
-  },
-  "Rights": "LumarSoft - All rights reserved - 2024"
+  }
+  
 }
