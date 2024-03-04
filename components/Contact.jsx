@@ -41,10 +41,14 @@ const Contact = ({ lenguaje }) => {
             </div>
           </motion.div>
 
-          <form
+          <motion.form
             ref={refForm}
             onSubmit={handleSubmit}
             className="max-w-2xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, offset: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <div className="flex flex-wrap">
               <div className="p-2 w-1/2">
@@ -100,7 +104,7 @@ const Contact = ({ lenguaje }) => {
                 </button>
               </div>
             </div>
-          </form>
+          </motion.form>
         </div>
       </section>
     </div>

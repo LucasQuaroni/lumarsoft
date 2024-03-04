@@ -40,20 +40,13 @@ function Navbar() {
           <a href="#whyUs">
             {params.lang === "es" ? "¿Por qué elegirnos?" : "Why Us?"}
           </a>
-          <a href="#nosotros">
-            {params.lang === "es" ? "Sobre Nosotros" : "About LumarSoft"}
-          </a>
           <a href="#technologies">
             {params.lang === "es" ? "Tecnologías" : "Technologies"}
           </a>
-          {/* <button className="bg-sky-600 px-3 py-2 font-semibold rounded-md hover:bg-sky-700 transition-all duration-300 ">
-            <span className=" animation-pulse">
-                <a href="#contact">
-              {params.lang === "es" ? "Contactar" : "Contact Us"}
-            </a>
-            </span>
-          
-          </button> */}
+          <a href="#nosotros">
+            {params.lang === "es" ? "Sobre Nosotros" : "About LumarSoft"}
+          </a>
+      
         </div>
       </div>
 
